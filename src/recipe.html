@@ -101,7 +101,21 @@
     <footer>
       <div class="email">info@cookhelp.ru</div>
     </footer>
-    
+    <div class="popup--buy">
+      <form class="popup__form" action="/echo" method="post">
+        <label for="">Текст</label>
+        <textarea name="" id="" cols="30" rows="10">Я собираюсь приготовить блюдо "Спагетти Карбонара", но мне не хватает несколько ингредиентов. По возможности купи, пожалуйста, по пути:</textarea>
+        <input id="spaghetti" class="popup__buy"type="checkbox" checked>
+        <label for="spaghetti">спаггети (250 г)</label>
+        <input id="cream" class="popup__buy"type="checkbox" checked>
+        <label for="cream">сливки 20% (200 мл)</label>
+        <input id="egg" class="popup__buy"type="checkbox" checked>
+        <label for="egg">яйцо куриное (4 штуки)</label>
+        <label for="phone">Номер:</label>
+        <input id="phone" type="tel" pattern="[1]{+}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 911 911 11 11" required>
+        <input id="send" type="submit" value="Отправить" disabled>
+      </form> 
+    </div>
   </body>
   
 </html>
