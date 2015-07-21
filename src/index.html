@@ -20,72 +20,72 @@
     </nav>
     <h1>Кулинарный цифровой помощник</h1>
     <h2>Готовить еду стало удобнее</h2>
-    <a href="#" class="header__button">Выбрать рецепт</a>
-    <div class="list header__list">
-      <a href="#" class="header__list-choose">Выберите блюдо на сегодня</a>
-      <a href="#" class="header__list-menu">Получите список продуктов</a>
-      <a href="#" class="header__list-prompt">Используйте подсказки пока готовите</a>
-      <a href="#" class="header__list-favorites">Сохраняйте еду в избранном</a>
-    </div>
+    <a href="#" class="btn header__btn">Выбрать рецепт</a>
+    <ul class="ability">
+      <li class="ability__type ability__type--choose">Выберите блюдо на сегодня</li>
+      <li class="ability__type ability__type--menu">Получите список продуктов</li>
+      <li class="ability__type ability__type--prompt">Используйте подсказки пока готовите</li>
+      <li class="ability__type header__list--favorites">Сохраняйте еду в избранном</li>
+    </ul>
   </header>
   <article class="content">
-    <header>Популярные рецепты</header>
+    <h3>Популярные рецепты</h3>
     <article class="recipe">
       <img src="http://placehold.it/200x350" alt="" class="recipe__img-carbonara" />
-      <div class="recipe__right-wrap">
-        <header>Спаггети Карбонара</header>
+      <div class="recipe__description">
+        <h4>Спаггети Карбонара</h4>
         <p>Самая, пожалуй, знаменитая итальянская подливка к пасте</p>
         <span class="recipe__time">15 минут</span>
         <span class="recipe__ingredient">7 ингридиентов</span>
-        <p class="recipe__recomendation">Рекомендуют:<span> 155</span> человек</p>
-        <a href="./recipe.html" class="recipe__button">
+        <p class="recipe__recomendation">Рекомендуют: <span>155</span> человек</p>
+        <a href="recipe.html" class="btn recipe__btn">Смотреть</a>
       </div>
     </article>
     <article class="recipe">
       <img src="http://placehold.it/200x350" alt="" class="recipe__img-carbonara" />
-      <div class="recipe__right-wrap">
-        <header>Спаггети Карбонара</header>
+      <div class="recipe__description">
+        <h4>Спаггети Карбонара</h4>
         <p>Самая, пожалуй, знаменитая итальянская подливка к пасте</p>
         <span class="recipe__time">15 минут</span>
         <span class="recipe__ingredient">7 ингридиентов</span>
-        <p class="recipe__recomendation">Рекомендуют:<span> 155</span> человек</p>
-        <a href="./recipe.html" class="recipe__button">
+        <p class="recipe__recomendation">Рекомендуют: <span>155</span> человек</p>
+        <a href="recipe.html" class="btn recipe__btn">Смотреть</a>
       </div>
     </article>
     <article class="recipe">
       <img src="http://placehold.it/200x350" alt="" class="recipe__img-carbonara" />
-      <div class="recipe__right-wrap">
-        <header>Спаггети Карбонара</header>
+      <div class="recipe__description">
+        <h4>Спаггети Карбонара</h4>
         <p>Самая, пожалуй, знаменитая итальянская подливка к пасте</p>
         <span class="recipe__time">15 минут</span>
         <span class="recipe__ingredient">7 ингридиентов</span>
-        <p class="recipe__recomendation">Рекомендуют:<span> 155</span> человек</p>
-        <a href="./recipe.html" class="recipe__button">
+        <p class="recipe__recomendation">Рекомендуют: <span>155</span> человек</p>
+        <a href="recipe.html" class="btn recipe__btn">Смотреть</a>
       </div>
     </article>
     <article class="recipe">
       <img src="http://placehold.it/200x350" alt="" class="recipe__img-carbonara" />
-      <div class="recipe__right-wrap">
-        <header>Спаггети Карбонара</header>
+      <div class="recipe__description">
+        <h4>Спаггети Карбонара</h4>
         <p>Самая, пожалуй, знаменитая итальянская подливка к пасте</p>
         <span class="recipe__time">15 минут</span>
         <span class="recipe__ingredient">7 ингридиентов</span>
-        <p class="recipe__recomendation">Рекомендуют:<span> 155</span> человек</p>
-        <a href="./recipe.html" class="recipe__button">
+        <p class="recipe__recomendation">Рекомендуют: <span>155</span> человек</p>
+        <a href="recipe.html" class="btn recipe__btn">Смотреть</a>
       </div>
     </article>
     <section>
-      <header> Популярные категории</header>
-      <div class="list content__list">
-        <a href="#" class="content__list-vegetarian">Вегетарианская кухня</a>
-        <a href="#" class="content__list-italian">Итальянская кухня</a>
-        <a href="#" class="content__list-spicy">
-            Острые блюда</a>
-        <a href="#" class="content__list-asian">Азиатская кухня</a>
-      </div>
+      <h3> Популярные категории</h3>
+      <ul class="popular">
+        <li class="popular__type popular__type--vegetarian"><a href="#">Вегетарианская кухня</a>
+          <li>
+            <li class="popular__type popular__type--italian"><a href="#">Итальянская кухня</a></li>
+            <li class="popular__type popular__type--spicy"><a href="#">Острые блюда</a></li>
+            <li class="popular__type popular__type--asian"><a href="#">Азиатская кухня</a></li>
+            </div>
     </section>
     <section>
-      <header>Отзывы</header>
+      <h3>Отзывы</h3>
       <div class="review-slider">
         <input type=radio id="btn-1 name=r-toggle" checked>
         <input type=radio id="btn-2 name=r-toggle">
@@ -98,10 +98,10 @@
         <div class="review-slider__slides">
           <div class="review-slider__slide">
             <img src="http://placehold.it/100x100" class="rewiew-slider__photo" alt="">
-            <div class="review-slider__right-wrap">
+            <div class="review-slider__comment">
               <header>Мария</header>
               <ul class="review-slider__rate">
-              <!-- Делать буду так (http://xiper.net/examples/html-and-css-tricks/content/rating-1.html) -->
+                <!-- Делать буду так (http://xiper.net/examples/html-and-css-tricks/content/rating-1.html) -->
                 <li><span></span></li>
                 <li><span></span></li>
                 <li><span></span></li>
@@ -114,10 +114,10 @@
           </div>
           <div class="review-slider__slide">
             <img src="http://placehold.it/100x100" class="rewiew-slider__photo" alt="">
-            <div class="review-slider__right-wrap">
+            <div class="review-slider__comment">
               <header>Мария</header>
               <ul class="review-slider__rate">
-              <!-- Делать буду так (http://xiper.net/examples/html-and-css-tricks/content/rating-1.html) -->
+                <!-- Делать буду так (http://xiper.net/examples/html-and-css-tricks/content/rating-1.html) -->
                 <li><span></span></li>
                 <li><span></span></li>
                 <li><span></span></li>
@@ -130,10 +130,10 @@
           </div>
           <div class="review-slider__slide">
             <img src="http://placehold.it/100x100" class="rewiew-slider__photo" alt="">
-            <div class="review-slider__right-wrap">
+            <div class="review-slider__comment">
               <header>Мария</header>
               <ul class="review-slider__rate">
-              <!-- Делать буду так (http://xiper.net/examples/html-and-css-tricks/content/rating-1.html) -->
+                <!-- Делать буду так (http://xiper.net/examples/html-and-css-tricks/content/rating-1.html) -->
                 <li><span></span></li>
                 <li><span></span></li>
                 <li><span></span></li>
@@ -146,10 +146,10 @@
           </div>
           <div class="review-slider__slide">
             <img src="http://placehold.it/100x100" class="rewiew-slider__photo" alt="">
-            <div class="review-slider__right-wrap">
+            <div class="review-slider__comment">
               <header>Мария</header>
               <ul class="review-slider__rate">
-              <!-- Делать буду так (http://xiper.net/examples/html-and-css-tricks/content/rating-1.html) -->
+                <!-- Делать буду так (http://xiper.net/examples/html-and-css-tricks/content/rating-1.html) -->
                 <li><span></span></li>
                 <li><span></span></li>
                 <li><span></span></li>
@@ -161,11 +161,11 @@
             </div>
           </div>
           <div class="review-slider__slide">
-            <img src="http://placehold.it/100x100"class="rewiew-slider__photo" alt="">
-            <div class="review-slider__right-wrap">
+            <img src="http://placehold.it/100x100" class="rewiew-slider__photo" alt="">
+            <div class="review-slider__comment">
               <header>Мария</header>
               <ul class="review-slider__rate">
-              <!-- Делать буду так (http://xiper.net/examples/html-and-css-tricks/content/rating-1.html) -->
+                <!-- Делать буду так (http://xiper.net/examples/html-and-css-tricks/content/rating-1.html) -->
                 <li><span></span></li>
                 <li><span></span></li>
                 <li><span></span></li>
@@ -179,8 +179,8 @@
         </div>
     </section>
   </article>
-  <footer>
-    <div class="email">info@cookhelp.ru</div>
+  <footer class="footer">
+    <a>info@cookhelp.ru</a>
   </footer>
 </body>
 
