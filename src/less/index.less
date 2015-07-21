@@ -1,0 +1,202 @@
+html,body {
+    width:100%;
+    margin:0 auto;
+    padding:0;
+    font-size: 10px;
+    font-family:"Open Sans", Arial, sans-serif;
+    line-height:1;
+  }
+.header {
+  display: flex;
+  flex-direction: column;
+  nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  }
+  &__logo {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-image: url("http://placehold.it/100x100");
+  }
+  &__menu {
+    margin: 0px;
+    li {
+      display: inline-block;
+      font-size: 1.6rem;
+    }
+  }
+  h1, h2, a {
+    text-align: center;
+  }
+  h1 {
+    font-size: 3.6rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+  a {
+    font-size: 1.6rem;
+    text-decoration: none;
+  }
+}
+.ability {
+  text-align: center;
+  li {
+    display: inline-block;
+    font-size: 1.6rem;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  h3 {
+    flex-shrink: 0;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+  }
+  section {
+    width: 100%;
+  }
+}
+.recipe{
+    width: 45%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    img {
+      width: 140px;
+      height: 180px;
+      flex-shrink: 0;
+    }
+    &__description {
+      width: 60%;
+      h4 {
+        font-size: 1.8rem;
+      }
+    }
+    &__text {
+      font-size: 1.6rem;
+    }
+    &__time {
+      font-size: 1.4rem;
+    }
+    &__ingredient {
+      font-size: 1.4rem;
+    }
+    &__recomendation {
+      font-size: 1.4rem;
+      display: inline-block;
+    }
+    &__btn {
+      font-size: 1.4rem;
+      text-decoration: none;
+    }
+  }
+
+.popular {
+  text-align: center;
+  &__type {
+    display: inline-block;
+    font-size: 1.6rem;
+  }
+}
+.review-slider {
+  width: 300%;
+  height: 400px;
+  position: relative;
+  input {
+    opacity: 0;
+  }
+  &__toggle {
+    position: absolute;
+    width: 33.3%;
+    top: 90%;
+    text-align: center;
+    z-index: 1000;
+    label {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background-color: red;
+    }
+  }
+  &__slides {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    width: 33.3%;
+    padding: 30px 0px;
+  }
+  &__slide-wrapper {
+    display: none;
+    height: 400px;
+    position: relative;
+    width: 100%;
+  }
+  &__slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    img {
+      width: 100px;
+      height: 100px;
+      flex-shrink: 0;
+    }
+  }
+  &__comment {
+    width: 80%;
+    header {
+      font-size: 1.6rem;
+      font-weight: bold;
+      width: 50px;
+      display: inline-block;
+    }
+    p {
+      font-size: 1.6rem;
+      display: inline-block;
+      width: 100%;
+    }
+  }
+  &__rate {
+    width: 150px;
+    display: inline-block;
+    li {
+      display: inline-block;
+    }
+  }
+  &__date {
+    font-size: 1.4rem;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    }
+}
+#btn-1:checked~ .review-slider__slides .review-slider__slide-wrapper:nth-child(1) {
+    display:block;
+}
+#btn-2:checked~ .review-slider__slides .review-slider__slide-wrapper:nth-child(2) {
+    display:block;
+}
+#btn-3:checked~ .review-slider__slides .review-slider__slide-wrapper:nth-child(3) {
+    display:block;
+}
+.footer {
+  padding: 30px;
+  a {
+    font-size: 1.4rem;
+  }
+}
