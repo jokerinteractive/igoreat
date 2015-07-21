@@ -9,6 +9,7 @@ html,body {
 .header {
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
   nav {
   display: flex;
   flex-direction: row;
@@ -19,6 +20,7 @@ html,body {
     display: inline-block;
     width: 100px;
     height: 100px;
+    margin-left: 35px;
     background-image: url("http://placehold.it/100x100");
   }
   &__menu {
@@ -26,27 +28,49 @@ html,body {
     li {
       display: inline-block;
       font-size: 1.6rem;
+      margin-right: 35px;
+    }
+    a {
+      text-decoration: none;
+      color: #000000;
     }
   }
-  h1, h2, a {
-    text-align: center;
+  h1, p, a {
+    align-self: center;
   }
   h1 {
     font-size: 3.6rem;
   }
-  h2 {
-    font-size: 2.4rem;
+  p {
+    font-size: 3rem;
+    margin-bottom: 80px;
   }
-  a {
+  &__btn {
     font-size: 1.6rem;
-    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    margin-bottom: 50px;
   }
 }
-.ability {
+.btn {
+  text-decoration: none;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  color: #000000;
   text-align: center;
+}
+.ability {
+  align-self: center;
+  margin-bottom: 45px;
   li {
     display: inline-block;
     font-size: 1.6rem;
+    text-align: center;
+    width: 190px;
+    padding: 135px 25px 0px 25px;
+    background-image: url("http://placehold.it/100x100");
+    background-repeat: no-repeat;
+    background-position: top, center;
   }
 }
 
@@ -56,11 +80,12 @@ html,body {
   align-items: center;
   flex-wrap: wrap;
   overflow: hidden;
-  h3 {
+  h2 {
     flex-shrink: 0;
     width: 100%;
-    font-size: 2rem;
+    font-size: 2.4rem;
     text-align: center;
+    margin-bottom: 50px;
   }
   section {
     width: 100%;
@@ -68,7 +93,8 @@ html,body {
 }
 .recipe{
     width: 45%;
-    padding: 20px;
+    padding: 0px 20px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -81,34 +107,53 @@ html,body {
     }
     &__description {
       width: 60%;
-      h4 {
+      h3 {
         font-size: 1.8rem;
       }
     }
     &__text {
       font-size: 1.6rem;
     }
-    &__time {
-      font-size: 1.4rem;
-    }
-    &__ingredient {
-      font-size: 1.4rem;
-    }
-    &__recomendation {
-      font-size: 1.4rem;
-      display: inline-block;
-    }
+    &__time,
+    &__ingredient,
+    &__recomendation,
     &__btn {
       font-size: 1.4rem;
-      text-decoration: none;
+    }
+    &__time,
+    &__ingredient {
+      padding: 20px 0px 20px 25px;
+      margin-right: 10px;
+      flex-basis: 50px;
+      background-image: url("http://placehold.it/15x15");
+      background-repeat: no-repeat;
+      background-position: 5%, 0%;
+    }
+    &__recomendation {
+      display: inline-block;
+      margin-right: 20px;
+      padding: 30px 0px;
+    }
+    &__btn {
+      padding: 5px 10px;
     }
   }
 
 .popular {
   text-align: center;
+  margin-bottom: 50px;
   &__type {
     display: inline-block;
     font-size: 1.6rem;
+    text-align: center;
+    width: 190px;
+    padding: 135px 25px 0px 25px;
+    background-image: url("http://placehold.it/100x100");
+    background-repeat: no-repeat;
+    background-position: top, center;
+    a {
+      color: #000000;
+    }
   }
 }
 .review-slider {
@@ -126,9 +171,10 @@ html,body {
     z-index: 1000;
     label {
       display: inline-block;
-      width: 15px;
-      height: 15px;
-      background-color: red;
+      font-size: 1.2rem;
+      line-height: 3rem;
+      padding: 0px 10px;
+      margin-right: 10px;
     }
   }
   &__slides {
@@ -198,5 +244,7 @@ html,body {
   padding: 30px;
   a {
     font-size: 1.4rem;
+    text-decoration: none;
+    color: #000000;
   }
 }
