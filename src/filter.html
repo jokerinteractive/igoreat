@@ -5,17 +5,17 @@
   <meta charset="utf-8">
   <title>IgorEat</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="./dest/css/style.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <article>
-    <form action="/echo" method="post">
-      <div class="filter">
+  <article class="select">
+    <section class="filter">
+      <form action="/echo" method="post">
         <div class="filter__name">
           <header class="filter__header">По названию</header>
-          <button class="filter__button">не важно</button>
-          <input type="text" plaseholder="Введите название блюда" value="" name="search" id="filter__search" list="search">
+          <a href="#" class="filter__btn">не важно</a>
+          <input type="text" plaseholder="Введите название блюда" value="Введите название блюда" name="search" id="filter__search" list="search">
           <datalist id="search">
             <option>Перчик</option>
             <option>Огуречик</option>
@@ -27,41 +27,75 @@
         </div>
         <div class="filter__time">
           <header class="filter__header">Время</header>
-          <button class="filter__button">не важно</button>
-          <input type="checkbox" class="filter__lasting" id="five" value="">
-          <label for="five">минут</label>
-          <input type="checkbox" class="filter__lasting" id="ten" value="">
-          <label for="ten">минут</label>
-          <input type="checkbox" class="filter__lasting" id="twenty" value="">
-          <label for="twenty">минут</label>
-          <input type="checkbox" class="filter__lasting" id="thirty" value="">
-          <label for="thirty">минут</label>
+          <a href="#" class="filter__btn">не важно</a>
+          <div class="lasting">
+            <input type="checkbox" id="five" class="lasting__btn lasting__btn--five" value="">
+            <label for="five">минут</label>
+            <input type="checkbox" id="ten" class="lasting__btn lasting__btn--ten" value="">
+            <label for="ten">минут</label>
+            <input type="checkbox" id="twenty" class="lasting__btn lasting__btn--twenty" value="">
+            <label for="twenty">минут</label>
+            <input type="checkbox" id="thirty" class="lasting__btn lasting__btn--thirty" value="">
+            <label for="thirty">минут</label>
+          </div>
         </div>
         <div class="filter__type">
           <header class="filter__header">Тип еды</header>
-          <button class="filter__button">не важно</button>
-          <input type="checkbox" class="filter__lasting" id="veg" value="">
-          <label for="veg">Вегетарианская</label>
-          <input type="checkbox" class="filter__lasting" id="euro" value="">
-          <label for="euro">Европейская</label>
-          <input type="checkbox" class="filter__lasting" id="jap" value="">
-          <label for="jap">Японская</label>
-          <input type="checkbox" class="filter__lasting" id="ital" value="">
-          <label for="ital">Итальянская</label>
+          <a href="#" class="filter__btn">не важно</a>
+          <div class="cuisine">
+            <label for="veg" class="cuisine__type">
+              <input type="checkbox" id="veg" value="">Вегетарианская
+            </label>
+            <label for="euro" class="cuisine__type">
+              <input type="checkbox" id="euro" value="">Европейская 
+            </label>
+            <label for="jap" class="cuisine__type">
+              <input type="checkbox" id="jap" value="">Японская
+            </label>
+            <label for="ital" class="cuisine__type">
+            <input type="checkbox" id="ital" value="">Итальянская
+            </label>
+          </div>
         </div>
-        <button class="filter__btn" disabled>Подобрать и съесть</button>
+        <button class="btn filter__btn filter__btn--disabled" disabled>Подобрать и съесть</button>
+      </form>
+    </section>
+    <section class="result">
+      <div class="result__output">
+        <p class="result__text result__text--nofilter">Выберите, что хотите приготовить</p>
+        <p class="result__text result__text--nomatches">Данного рецепта нет в системе</p>
+        <div class="result__count-matches">
+          <p>Найденo: <span class="result__counter">0</span></p>
+          <a href="#" class="btn result__btn">Сбросить</a>
+        </div>
+        <article class="recipe recipe--preview">
+          <img src="http://placehold.it/140x140" alt="" class="recipe__img--preview" />
+          <div class="recipe__description recipe__description--preview">
+            <header>Спаггети Карбонара</header>
+            <p class="recipe__text recipe__text--preview">Самая, пожалуй, знаменитая итальянская подливка к пасте</p>
+            <span class="recipe__time recipe__time--preview">15 минут</span>
+            <span class="recipe__ingredient recipe__ingredient--preview">7 ингридиентов</span>
+            <p class="recipe__recomendation recipe__recomendation--preview">Рекомендуют: <span>155</span> человек</p>
+            <a href="recipe.html" class="btn recipe__btn recipe__btn--preview">Смотреть</a>
+          </div>
+        </article>
+        <article class="recipe recipe--preview">
+          <img src="http://placehold.it/140x140" alt="" class="recipe__img--preview" />
+          <div class="recipe__description recipe__description--preview">
+            <header>Спаггети Карбонара</header>
+            <p class="recipe__text recipe__text--preview">Самая, пожалуй, знаменитая итальянская подливка к пасте</p>
+            <span class="recipe__time recipe__time--preview">15 минут</span>
+            <span class="recipe__ingredient recipe__ingredient--preview">7 ингридиентов</span>
+            <p class="recipe__recomendation recipe__recomendation--preview">Рекомендуют: <span>155</span> человек</p>
+            <a href="recipe.html" class="btn recipe__btn recipe__btn--preview">Смотреть</a>
+          </div>
+        </article>
       </div>
-      <div class="result">
-        <textarea class="result__output" rows="20" cols="40" readonly>
-          Выберите, что хотите приготовить
-        </textarea>
-        <button class="result__button result__button--active" type="reset">Сбросить</button>
-      </div>
-      <footer class="footer">
-        <a>info@cookhelp.ru</a>
-      </footer>
-    </form>
+    </section>
   </article>
+  <footer class="footer">
+    <a>info@cookhelp.ru</a>
+  </footer>
 </body>
 
 </html>
