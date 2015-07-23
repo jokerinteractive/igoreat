@@ -17,10 +17,14 @@
     background-image: url("http://placehold.it/100x100");
   }
   &__menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin: 0px;
     li {
-      display: inline-block;
       font-size: 1.6rem;
+      list-style: none;
       margin-right: 35px;
     }
     a {
@@ -32,6 +36,7 @@
   p,
   a {
     align-self: center;
+    text-align: center;
   }
   h1 {
     font-size: 3.6rem;
@@ -58,14 +63,13 @@
 }
 
 .ability {
-  text-align: center;
-<<<<<<< HEAD
-  padding: 0px;
-=======
->>>>>>> styles
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
   margin-bottom: 45px;
   li {
-    display: inline-block;
+    list-style: none;
     font-size: 1.6rem;
     text-align: center;
     width: 190px;
@@ -146,13 +150,22 @@
     padding: 5px 10px;
   }
 }
-
+.categories {
+  width: 100%;
+}
 .popular {
+<<<<<<< HEAD
   text-align: center;
   padding: 0;
+=======
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+>>>>>>> styles
   margin-bottom: 50px;
   &__type {
-    display: inline-block;
+    list-style: none;
     font-size: 1.6rem;
     text-align: center;
     width: 190px;
@@ -223,7 +236,6 @@
     header {
       font-size: 1.6rem;
       font-weight: bold;
-      width: 50px;
       display: inline-block;
       margin-bottom: 30px;
     }
@@ -249,6 +261,7 @@
   }
   &__ico {
     padding-left: 2px;
+    height: 10px;
     cursor: pointer;
     color: #FFB300;
     &:last-child {
