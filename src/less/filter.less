@@ -120,6 +120,7 @@
     font-size: 1.4rem;
     color: #999999;
     padding: 60px 6px 0px 6px;
+    margin-bottom: 10px;
   }
 }
 
@@ -131,13 +132,19 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  ul {
+    display: block;
+  }
+  li {
+    width: 100%;
+    list-style: none;
+    margin-bottom: 15px;
+  }
   input {
-    margin: 3px 5px 0 0;
+    margin: 0 5px 0 0;
   }
   label {
-    width: 100%;
     font-size: 1.4rem;
-    margin-bottom: 15px;
     cursor: pointer;
   }
 }
@@ -153,7 +160,8 @@
   background-color: #e5e5e5;
   &__output {
     width: 100%;
-    height: 480px;
+    display: flex;
+    flex-direction: column;
   }
   &__btn {
     font-size: 1.4rem;
@@ -192,6 +200,7 @@
     height: 140px;
     flex-shrink: 0;
     margin-right: 15px;
+    margin-bottom: 10px;
   }
   &__description--preview {
     width: 65%;
@@ -204,7 +213,7 @@
   }
   &__text--preview {
     font-size: 1.4rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   &__time--preview,
   &__ingredient--preview,
@@ -223,7 +232,7 @@
   &__recomendation--preview {
     display: inline-block;
     margin-right: 20px;
-    padding: 25px 0px;
+    padding: 15px 0px;
   }
   &__btn--preview {
     padding: 5px 10px;
