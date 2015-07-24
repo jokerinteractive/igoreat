@@ -1,6 +1,7 @@
 .select {
   margin-bottom: 50px;
   .flex-inline-block-model ();
+  flex-wrap: wrap;
   padding: 40px;
 }
 
@@ -11,6 +12,7 @@
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+  margin-right: 20px;
   &__header {
     font-size: 1.8rem;
   }
@@ -52,7 +54,8 @@
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 30px;
-  .flex-float-model ();
+  .flex-inline-block-model ();
+  align-self: center;
   flex-wrap: wrap;
   input {
     &:not(checked) {
@@ -68,7 +71,7 @@
       text-align: center;
       padding-top: 20px;
       top: 0px;
-      left: -2px;
+      left: 0px;
       width: 55px;
       height: 35px;
       border-radius: 50%;
@@ -215,7 +218,7 @@
   &__recomendation--preview {
     display: inline-block;
     margin-right: 20px;
-    padding: 15px 0px;
+    padding: 25px 0px;
   }
   &__btn--preview {
     padding: 5px 10px;
