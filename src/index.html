@@ -6,6 +6,7 @@
   <title>IgorEat</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -21,14 +22,16 @@
     <h1>Кулинарный цифровой помощник</h1>
     <p>Готовить еду стало удобнее</p>
     <a href="filter.html" class="btn header__btn">Выбрать рецепт</a>
-    <ul class="ability">
-      <li class="ability__type ability__type--choose">Выберите блюдо на сегодня</li>
-      <li class="ability__type ability__type--menu">Получите список продуктов</li>
-      <li class="ability__type ability__type--prompt">Используйте подсказки пока готовите</li>
-      <li class="ability__type ability__list--favorites">Сохраняйте еду в избранном</li>
-    </ul>
   </header>
   <article class="content">
+    <section class="promo">
+      <ul class="ability">
+        <li class="ability__type ability__type--choose">Выберите блюдо на сегодня</li>
+        <li class="ability__type ability__type--menu">Получите список продуктов</li>
+        <li class="ability__type ability__type--prompt">Используйте подсказки пока готовите</li>
+        <li class="ability__type ability__list--favorites">Сохраняйте еду в избранном</li>
+      </ul>
+    </section>
     <h2>Популярные рецепты</h2>
     <article class="recipe">
       <img src="http://placehold.it/140x180" alt="" class="recipe__img" />
@@ -74,7 +77,7 @@
         <a href="recipe.html" class="btn recipe__btn">Смотреть</a>
       </div>
     </article>
-    <section>
+    <section class="categories">
       <h2> Популярные категории</h2>
       <ul class="popular">
         <li class="popular__type popular__type--vegetarian"><a href="#">Вегетарианская кухня</a>
@@ -101,14 +104,20 @@
               <img src="http://placehold.it/100x100" class="rewiew-slider__photo" alt="">
               <div class="review-slider__comment">
                 <header>Мария1</header>
-                <ul class="review-slider__rate">
-                  <!-- Делать буду так (http://xiper.net/examples/html-and-css-tricks/content/rating-1.html) -->
-                  <li><span>s</span></li>
-                  <li><span>s</span></li>
-                  <li><span>s</span></li>
-                  <li><span>s</span></li>
-                  <li><span>s</span></li>
-                </ul>
+                <div class="review-slider__rate">
+                  <div class="review-slider__rate-wrapper">
+                    <input class="review-slider__star" id="star-5" type="radio" name="rating" value="5">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-5" title="5 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-4" type="radio" name="rating" value="4">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-4" title="4 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-3" type="radio" name="rating" value="3">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-3" title="3 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-2" type="radio" name="rating" value="2">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-2" title="2 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-1" type="radio" name="rating" value="1">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-1" title="1 out of 5 stars"></label>
+                  </div>
+                </div>
                 <p>Делаю все по рецептам. Отлично получается, очень вкусно!</p>
                 <span class="review-slider__date">1 марта 2015 года</span>
               </div>
@@ -117,14 +126,20 @@
               <img src="http://placehold.it/100x100" class="rewiew-slider__photo" alt="">
               <div class="review-slider__comment">
                 <header>Мария2</header>
-                <ul class="review-slider__rate">
-                  <!-- Делать буду так (http://xiper.net/examples/html-and-css-tricks/content/rating-1.html) -->
-                  <li><span></span></li>
-                  <li><span></span></li>
-                  <li><span></span></li>
-                  <li><span></span></li>
-                  <li><span></span></li>
-                </ul>
+                <div class="review-slider__rate">
+                  <div class="review-slider__rate-wrapper">
+                    <input class="review-slider__star" id="star-5" type="radio" name="rating" value="5">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-5" title="5 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-4" type="radio" name="rating" value="4">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-4" title="4 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-3" type="radio" name="rating" value="3">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-3" title="3 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-2" type="radio" name="rating" value="2">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-2" title="2 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-1" type="radio" name="rating" value="1">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-1" title="1 out of 5 stars"></label>
+                  </div>
+                </div>
                 <p>Делаю все по рецептам. Отлично получается, очень вкусно!</p>
                 <span class="review-slider__date">1 марта 2015 года</span>
               </div>
@@ -135,14 +150,20 @@
               <img src="http://placehold.it/100x100" class="rewiew-slider__photo" alt="">
               <div class="review-slider__comment">
                 <header>Мария3</header>
-                <ul class="review-slider__rate">
-                  <!-- Делать буду так (http://xiper.net/examples/html-and-css-tricks/content/rating-1.html) -->
-                  <li><span></span></li>
-                  <li><span></span></li>
-                  <li><span></span></li>
-                  <li><span></span></li>
-                  <li><span></span></li>
-                </ul>
+                <div class="review-slider__rate">
+                  <div class="review-slider__rate-wrapper">
+                    <input class="review-slider__star" id="star-5" type="radio" name="rating" value="5">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-5" title="5 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-4" type="radio" name="rating" value="4">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-4" title="4 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-3" type="radio" name="rating" value="3">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-3" title="3 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-2" type="radio" name="rating" value="2">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-2" title="2 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-1" type="radio" name="rating" value="1">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-1" title="1 out of 5 stars"></label>
+                  </div>
+                </div>
                 <p>Делаю все по рецептам. Отлично получается, очень вкусно!</p>
                 <span class="review-slider__date">1 марта 2015 года</span>
               </div>
@@ -150,15 +171,21 @@
             <div class="review-slider__slide">
               <img src="http://placehold.it/100x100" class="rewiew-slider__photo" alt="">
               <div class="review-slider__comment">
-                <header>Мария</header>
-                <ul class="review-slider__rate">
-                  <!-- Делать буду так (http://xiper.net/examples/html-and-css-tricks/content/rating-1.html) -->
-                  <li><span></span></li>
-                  <li><span></span></li>
-                  <li><span></span></li>
-                  <li><span></span></li>
-                  <li><span></span></li>
-                </ul>
+                <header>Мария4</header>
+                <div class="review-slider__rate">
+                  <div class="review-slider__rate-wrapper">
+                    <input class="review-slider__star" id="star-5" type="radio" name="rating" value="5">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-5" title="5 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-4" type="radio" name="rating" value="4">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-4" title="4 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-3" type="radio" name="rating" value="3">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-3" title="3 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-2" type="radio" name="rating" value="2">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-2" title="2 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-1" type="radio" name="rating" value="1">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-1" title="1 out of 5 stars"></label>
+                  </div>
+                </div>
                 <p>Делаю все по рецептам. Отлично получается, очень вкусно!</p>
                 <span class="review-slider__date">1 марта 2015 года</span>
               </div>
@@ -168,15 +195,21 @@
             <div class="review-slider__slide">
               <img src="http://placehold.it/100x100" class="rewiew-slider__photo" alt="">
               <div class="review-slider__comment">
-                <header>Мария</header>
-                <ul class="review-slider__rate">
-                  <!-- Делать буду так (http://xiper.net/examples/html-and-css-tricks/content/rating-1.html) -->
-                  <li><span></span></li>
-                  <li><span></span></li>
-                  <li><span></span></li>
-                  <li><span></span></li>
-                  <li><span></span></li>
-                </ul>
+                <header>Мария5</header>
+                <div class="review-slider__rate">
+                  <div class="review-slider__rate-wrapper">
+                    <input class="review-slider__star" id="star-5" type="radio" name="rating" value="5">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-5" title="5 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-4" type="radio" name="rating" value="4">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-4" title="4 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-3" type="radio" name="rating" value="3">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-3" title="3 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-2" type="radio" name="rating" value="2">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-2" title="2 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-1" type="radio" name="rating" value="1">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-1" title="1 out of 5 stars"></label>
+                  </div>
+                </div>
                 <p>Делаю все по рецептам. Отлично получается, очень вкусно!</p>
                 <span class="review-slider__date">1 марта 2015 года</span>
               </div>
@@ -184,15 +217,21 @@
             <div class="review-slider__slide">
               <img src="http://placehold.it/100x100" class="rewiew-slider__photo" alt="">
               <div class="review-slider__comment">
-                <header>Мария</header>
-                <ul class="review-slider__rate">
-                  <!-- Делать буду так (http://xiper.net/examples/html-and-css-tricks/content/rating-1.html) -->
-                  <li><span></span></li>
-                  <li><span></span></li>
-                  <li><span></span></li>
-                  <li><span></span></li>
-                  <li><span></span></li>
-                </ul>
+                <header>Мария6</header>
+                <div class="review-slider__rate">
+                  <div class="review-slider__rate-wrapper">
+                    <input class="review-slider__star" id="star-5" type="radio" name="rating" value="5">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-5" title="5 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-4" type="radio" name="rating" value="4">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-4" title="4 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-3" type="radio" name="rating" value="3">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-3" title="3 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-2" type="radio" name="rating" value="2">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-2" title="2 out of 5 stars"></label>
+                    <input class="review-slider__star" id="star-1" type="radio" name="rating" value="1">
+                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-1" title="1 out of 5 stars"></label>
+                  </div>
+                </div>
                 <p>Делаю все по рецептам. Отлично получается, очень вкусно!</p>
                 <span class="review-slider__date">1 марта 2015 года</span>
               </div>
