@@ -138,3 +138,38 @@
     line-height: 2.1rem;
   }
 }
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 30px;
+  width: 500px;
+  height: 390px;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  &__sms {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1.8rem;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.8rem;
+  }
+  label {
+    display: block;
+    line-height: 3.2rem;
+  }
+  input[type="tel"] {
+    margin-bottom: 40px;
+  }
+  &__btn {
+    margin: 0 auto;
+    display: block;
+    padding: 5px 20px;
+  }
+}
