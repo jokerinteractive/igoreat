@@ -16,16 +16,18 @@
   &__header {
     font-size: 1.8rem;
   }
-  &__btn {
+  &__link {
     font-size: 1.4rem;
     color: #999999;
   }
-  &__btn--disabled {
+  &__btn {
     background-color: #ffffff;
-    padding: 10px 0px;
+    padding: 10px 0;
     width: 100%;
     box-sizing: border-box;
     font-size: 1.8rem;
+  }
+  &__btn--disabled {
     opacity: 0.5;
   }
   &__name {
@@ -70,8 +72,8 @@
       position: absolute;
       text-align: center;
       padding-top: 20px;
-      top: 0px;
-      left: 0px;
+      top: 0;
+      left: 0;
       width: 55px;
       height: 35px;
       border-radius: 50%;
@@ -108,7 +110,7 @@
     position: relative;
     font-size: 1.4rem;
     color: #999999;
-    padding: 60px 6px 0px 6px;
+    padding: 60px 6px 0 6px;
     margin-bottom: 10px;
   }
 }
@@ -119,9 +121,7 @@
   margin-bottom: 30px;
   .flex-inline-block-model ();
   flex-wrap: wrap;
-  ul {
-    display: block;
-  }
+  padding-left: 0;
   li {
     width: 100%;
     list-style: none;
@@ -209,7 +209,7 @@
   }
   &__time--preview,
   &__ingredient--preview {
-    padding: 20px 0px 20px 25px;
+    padding: 20px 0 20px 25px;
     margin-right: 10px;
     background-image: url("http://placehold.it/15x15");
     background-repeat: no-repeat;
@@ -218,7 +218,7 @@
   &__recomendation--preview {
     display: inline-block;
     margin-right: 20px;
-    padding: 25px 0px;
+    padding: 25px 0;
   }
   &__btn--preview {
     padding: 5px 10px;
