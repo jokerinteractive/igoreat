@@ -1,12 +1,11 @@
-node_modules
+node_modules/
+bower_components/
+dest/
+.idea/
 npm-debug.log
 Thumbs.db
 .DS_Store
 prepros.cfg
-dest
 *.sublime*
 *.map
-css/*
-*.css
-.idea
 TZ/
