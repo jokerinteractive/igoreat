@@ -95,3 +95,36 @@
   }
 }
 
+.timer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 170px;
+  width: 660px;
+  height: 235px;
+  background-color: @bg-color--light;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  &__counter {
+    font-size: 5.0rem;
+    color: #e94d3c;
+  }
+  &__controls {
+    .flex-float-model ();
+    width: 40%;
+    font-size: 1.4rem;
+  }
+  &__control {
+    display: inline-block;
+  }
+  &__progress {
+    width: 100%;
+    height: 20px;
+    background-color: @bg-color--dark;
+  }
+}
