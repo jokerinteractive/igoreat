@@ -1,0 +1,130 @@
+.gallery-step {
+  position: relative;  
+  width: 100%;
+  overflow: hidden;
+  background-color: @bg-color--middle;
+  &__control {
+    position: absolute;
+    top: 25px;
+    font-size: 1.8rem;
+    color: @text-color;
+    &--left {
+      left: 50px;
+    }
+    &--right {
+      right: 50px;
+    }
+  }
+  &__slider {
+    height: 320px;
+    width: 100%;
+  }
+  &__item {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    margin: 0;
+    width: 660px;
+    height: 320px;
+    transform: translateX(-50%);
+  }
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  &__times {
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    z-index: 15;
+    display: flex;
+    .flex-float-model ();
+    width: 40%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  &__time,
+  &__turn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px 10px 40px; 
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    background-color: @bg-color--middle;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      width: 25px;
+      height: 25px;
+      background-color: @bg-color--dark;
+      border: 1px solid @border-color;
+      border-radius: 50%;
+      transform: translateY(-50%);
+      box-sizing: border-box;
+    }
+  }
+  &__turn {
+    color: @text-color;
+    text-decoration: none;
+    &:before {
+      background-color: #e94d3c;
+    }
+    &:hover {
+      background-color: #b6b6b6;
+      &:before {
+        background-color: #ee2812;
+      }
+    }
+  }
+  figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 32px;
+    box-sizing: border-box;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    text-align: center;
+    vertical-align: middle;
+    background-color: @bg-color--base;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
+
+.timer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 170px;
+  width: 660px;
+  height: 235px;
+  background-color: @bg-color--light;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  &__counter {
+    font-size: 5.0rem;
+    color: #e94d3c;
+  }
+  &__controls {
+    .flex-float-model ();
+    width: 40%;
+    font-size: 1.4rem;
+  }
+  &__control {
+    display: inline-block;
+  }
+  &__progress {
+    width: 100%;
+    height: 20px;
+    background-color: @bg-color--dark;
+  }
+}
