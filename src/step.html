@@ -4,43 +4,52 @@
   <head>
     <meta charset="UTF-8">
     <title>Спагетти Карбонара - шаг 1</title>
+    <link href="./css/style.css" rel="stylesheet">
   </head>
   
   <body>
-    <article class="recipe__step">
+    <article class="recipe recipe--step">
       <section class="recipe__intro">
-        <header class="recipe__title"><h2>Спагетти Карбонара</h2></header>
-        <p class="recipe__text">Alla carbonara — самая, пожалуй, знаменитая итальянская подливка к пасте (не только к спагетти,
-          но и к другим видам тоже), приготовленная по способу карбонариев. В нее входит всего три ингредиента:
-          грудинка, яйца и тертый пармезан. Сливки, чеснок и лук — дополнительные, но не обязательные вкусовые акценты,
-          против использования которых сами итальянцы, впрочем, возражений не имеют.</p>
-        <span class="recipe_tag--time">20 мин</span>
-        <span class="recipe_tag--ingredient">7 ингредиентов</span>
+        <h2>Спагетти Карбонара</h2>
+        <p class="recipe__text recipe__text--step">Alla carbonara — самая, пожалуй, знаменитая итальянская подливка к пасте (не только к спагетти,
+        но и к другим видам тоже), приготовленная по способу карбонариев. В нее входит всего три ингредиента:
+        грудинка, яйца и тертый пармезан. Сливки, чеснок и лук — дополнительные, но не обязательные вкусовые акценты,
+        против использования которых сами итальянцы, впрочем, возражений не имеют.</p>
+        <div class="recipe__wrapper--step">
+          <span class="recipe__time recipe__time--step">20 мин</span>
+          <span class="recipe__ingredient recipe__ingredient--step">7 ингредиентов</span>
+        </div>
       </section>
       <section class="gallery-step">
         <a href="" class="gallery-step__control gallery-step__control--left">Шаг назад</a>
-        <a href="" class="gallery-step__control gallery-step__control--rigth">Дальше</a>
-        <figure class="gallery-step__item">
-          <img src="http://placehold.it/660x235" alt="">
-          <div class="gallery-step__time">
-            <span class="gallery-step__time">4мин</span>
-            <a href="" class="gallery-step__time">Включить таймер</a>
-          </div>
-          <figcaption>Сварите пасту до состояния al dente</figcaption>
-        </figure>
-      </section>
-      <div class="timer">
-        <span class="timer__hour">00</span>
-        <span class="timer__dots">:</span>
-        <span class="timer__minute">04</span>
-        <span class="timer__dots">:</span>
-        <span class="timer__second">00</span>
-        <div class="timer__controls">
-          <a class="timer__control timer__control--pause" href="#">Пауза</a>
-          <a class="timer__control timer__control--stop" href="#">Остановить</a>
+        <a href="" class="gallery-step__control gallery-step__control--right">Дальше</a>
+        <div class="gallery-step__slider">
+
+          <figure class="gallery-step__item gallery-step__item--active">
+            <img src="http://placehold.it/660x235/868686/eeeeee" alt="">
+            <div class="gallery-step__times">
+              <span class="gallery-step__time">12мин</span>
+              <a href="" class="gallery-step__turn">Включить таймер</a>
+            </div>
+            <figcaption>Шаг 1: Сварите пасту до состояния al dente</figcaption>
+          </figure>
+
         </div>
-        <div class="timer__progress"></div>
-      </div>
+        <div class="timer">
+          <div class="timer__counter">
+            <span class="timer__hour">00</span>
+            <span class="timer__dots">:</span>
+            <span class="timer__minute">12</span>
+            <span class="timer__dots">:</span>
+            <span class="timer__second">00</span>
+          </div>
+          <div class="timer__controls">
+            <a class="timer__control timer__control--pause" href="#">Пауза</a>
+            <a class="timer__control timer__control--stop" href="#">Остановить</a>
+          </div>
+          <div class="timer__progress"></div>
+        </div>
+      </section>
     </article>
     <footer class="footer">
       <a href="#" class="email">info@cookhelp.ru</a>
