@@ -1,0 +1,23 @@
+{
+  "name": "IgorEat",
+  "version": "0.0.1",
+  "description": "Сайт о рецептах",
+  "private": true,
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jokerinteractive/igoreat"
+  },
+  "author": "JokerInteractive",
+  "devDependencies": {
+    "browser-sync": "^2.8.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-less": "^3.0.3",
+    "gulp-uglify": "^1.2.0"
+  }
+}

@@ -1,0 +1,226 @@
+.select {
+  margin-bottom: 50px;
+  .flex-inline-block-model ();
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.filter {
+  padding: 30px;
+  background-color: #e5e5e5;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin-right: 20px;
+  &__header {
+    font-size: 1.8rem;
+  }
+  &__link {
+    font-size: 1.4rem;
+    color: #999999;
+  }
+  &__btn {
+    background-color: #ffffff;
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.8rem;
+  }
+  &__btn--disabled {
+    opacity: 0.5;
+  }
+  &__name {
+    .flex-float-model ();
+    flex-wrap: wrap;
+    input {
+      width: 100%;
+      font-size: 16px;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-bottom: 30px;
+      font-family: "Open Sans", Arial, sans-serif;
+    }
+  }
+  &__header {
+    margin-bottom: 15px;
+  }
+  &__time,
+  &__type {
+    .flex-float-model ();
+    flex-wrap: wrap;
+  }
+}
+
+.lasting {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  .flex-inline-block-model ();
+  align-self: center;
+  flex-wrap: wrap;
+  input {
+    &:not(checked) {
+      position: absolute;
+      opacity: 0;
+    }
+    &:not(checked)+ label {
+      position: relative;
+      cursor: pointer;
+    }
+    &:not(checked)+ label:before {
+      position: absolute;
+      text-align: center;
+      padding-top: 20px;
+      top: 0;
+      left: 0;
+      width: 55px;
+      height: 35px;
+      border-radius: 50%;
+      background: #ffffff;
+      box-shadow: 0 0 2px 0 #000;
+      transition: box-shadow 2s ease, color 2s ease;
+    }
+    &:checked + label:before {
+      box-shadow: 0 0 7px 0 #000;
+      color: #000;
+    }
+  }
+  &__btn--five {
+    &:not(checked)+ label:before {
+      content: "5-7";
+    }
+  }
+  &__btn--ten {
+    &:not(checked)+ label:before {
+      content: "10-15";
+    }
+  }
+  &__btn--twenty {
+    &:not(checked)+ label:before {
+      content: "20-30";
+    }
+  }
+  &__btn--thirty {
+    &:not(checked)+ label:before {
+      content: "30-60";
+    }
+  }
+  label {
+    position: relative;
+    font-size: 1.4rem;
+    color: #999999;
+    padding: 60px 6px 0 6px;
+    margin-bottom: 10px;
+  }
+}
+
+.cuisine {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  .flex-inline-block-model ();
+  flex-wrap: wrap;
+  padding-left: 0;
+  li {
+    width: 100%;
+    list-style: none;
+    margin-bottom: 15px;
+  }
+  input {
+    margin: 0 5px 0 0;
+  }
+  label {
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+}
+
+.result {
+  width: 60%;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #e5e5e5;
+  &__output {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__btn {
+    font-size: 1.4rem;
+    padding: 5px;
+  }
+  &__text {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  &__text--nofilter {
+    display: block;
+  }
+  &__text--nomatches {
+    display: none;
+  }
+  &__count-matches {
+    .flex-float-model ();
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-bottom: 30px;
+    p {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.recipe {
+  &--preview {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  &__img--preview {
+    width: 140px;
+    height: 140px;
+    flex-shrink: 0;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+  &__description--preview {
+    width: 65%;
+    flex-grow: 1;
+    header {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+  }
+  &__text--preview {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  &__time--preview,
+  &__ingredient--preview,
+  &__recomendation--preview,
+  &__btn--preview {
+    font-size: 1.2rem;
+  }
+  &__time--preview,
+  &__ingredient--preview {
+    padding: 20px 0 20px 25px;
+    margin-right: 10px;
+    background-image: url("http://placehold.it/15x15");
+    background-repeat: no-repeat;
+    background-position: 5%, 0%;
+  }
+  &__recomendation--preview {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 25px 0;
+  }
+  &__btn--preview {
+    padding: 5px 10px;
+  }
+}
