@@ -26,6 +26,8 @@
     width: 100%;
     box-sizing: border-box;
     font-size: 1.8rem;
+    word-wrap: break-word;
+    display: block;
   }
   &__btn--disabled {
     opacity: 0.5;
@@ -209,16 +211,14 @@
   }
   &__time--preview,
   &__ingredient--preview {
-    padding: 20px 0 20px 25px;
     margin-right: 10px;
     background-image: url("http://placehold.it/15x15");
     background-repeat: no-repeat;
     background-position: 5%, 0%;
   }
   &__recomendation--preview {
-    display: inline-block;
+    display: inline-flex;
     margin-right: 20px;
-    padding: 25px 0;
   }
   &__btn--preview {
     padding: 5px 10px;
