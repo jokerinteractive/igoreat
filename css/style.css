@@ -1308,15 +1308,4 @@ body {
   display: block;
   padding: 5px 20px;
 }
-.debug > * {
-  outline: 4px solid green;
-}
-.debug > * > * {
-  outline: 3px solid red;
-}
-.debug > * > * > * {
-  outline: 2px solid orange;
-}
-.debug > * > * > * > * {
-  outline: 1px solid gray;
-}
+
