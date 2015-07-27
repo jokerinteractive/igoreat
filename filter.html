@@ -14,8 +14,8 @@
       <form action="/echo" method="post">
         <div class="filter__name">
           <header class="filter__header">По названию</header>
-          <a href="#" class="filter__btn">не важно</a>
-          <input type="text" value="Введите название блюда" name="search" id="filter__search" list="search">
+          <a class="filter__link" href="#">не важно</a>
+          <input id="filter__search" type="text" placeholder="Введите название блюда" value="" name="search" list="search">
           <datalist id="search">
             <option>Перчик</option>
             <option>Огуречик</option>
@@ -27,40 +27,40 @@
         </div>
         <div class="filter__time">
           <header class="filter__header">Время</header>
-          <a href="#" class="filter__btn">не важно</a>
+          <a class="filter__link" href="#">не важно</a>
           <div class="lasting filter__lasting">
-            <input type="checkbox" id="five" class="lasting__btn lasting__btn--five" value="">
+            <input class="lasting__btn lasting__btn--five" id="five" type="checkbox" value="">
             <label for="five">минут</label>
-            <input type="checkbox" id="ten" class="lasting__btn lasting__btn--ten" value="">
+            <input class="lasting__btn lasting__btn--ten" id="ten" type="checkbox" value="">
             <label for="ten">минут</label>
-            <input type="checkbox" id="twenty" class="lasting__btn lasting__btn--twenty" value="">
+            <input class="lasting__btn lasting__btn--twenty" id="twenty" type="checkbox" value="">
             <label for="twenty">минут</label>
-            <input type="checkbox" id="thirty" class="lasting__btn lasting__btn--thirty" value="">
+            <input class="lasting__btn lasting__btn--thirty" id="thirty" type="checkbox" value="">
             <label for="thirty">минут</label>
           </div>
         </div>
         <div class="filter__type">
           <header class="filter__header">Тип еды</header>
-          <a href="#" class="filter__btn">не важно</a>
+          <a class="filter__link" href="#">не важно</a>
           <ul class="cuisine">
             <li>
-              <label for="veg" class="cuisine__type">
-                <input type="checkbox" id="veg" value="">Вегетарианская
+              <label class="cuisine__type" for="veg">
+                <input id="veg" type="checkbox" value="">Вегетарианская
               </label>
             </li>
             <li>
-              <label for="euro" class="cuisine__type">
-                <input type="checkbox" id="euro" value="">Европейская 
+              <label class="cuisine__type" for="euro">
+                <input id="euro" type="checkbox" value="">Европейская 
               </label>
             </li>
             <li>
-              <label for="jap" class="cuisine__type">
-                <input type="checkbox" id="jap" value="">Японская
+              <label class="cuisine__type" for="jap">
+                <input id="jap" type="checkbox" value="">Японская
               </label>
             </li>
             <li>
-              <label for="ital" class="cuisine__type">
-                <input type="checkbox" id="ital" value="">Итальянская
+              <label class="cuisine__type" for="ital">
+                <input id="ital" type="checkbox" value="">Итальянская
               </label>
             </li>
           </ul>
@@ -74,28 +74,28 @@
         <p class="result__text result__text--nomatches">Данного рецепта нет в системе</p>
         <div class="result__count-matches">
           <p>Найденo: <span class="result__counter">0</span></p>
-          <a href="#" class="btn result__btn">Сбросить</a>
+          <a class="btn result__btn" href="#">Сбросить</a>
         </div>
         <article class="recipe recipe--preview">
-          <img src="http://placehold.it/140x140" alt="" class="recipe__img--preview" />
+          <img class="recipe__img--preview" src="http://placehold.it/140x140" alt="" />
           <div class="recipe__description recipe__description--preview">
             <header>Спаггети Карбонара</header>
             <p class="recipe__text recipe__text--preview">Самая, пожалуй, знаменитая итальянская подливка к пасте</p>
             <span class="recipe__time recipe__time--preview">15 минут</span>
             <span class="recipe__ingredient recipe__ingredient--preview">7 ингридиентов</span>
             <p class="recipe__recomendation recipe__recomendation--preview">Рекомендуют: <span>155</span> человек</p>
-            <a href="recipe.html" class="btn recipe__btn recipe__btn--preview">Смотреть</a>
+            <a class="btn recipe__btn recipe__btn--preview" href="recipe.html">Смотреть</a>
           </div>
         </article>
         <article class="recipe recipe--preview">
-          <img src="http://placehold.it/140x140" alt="" class="recipe__img--preview" />
+          <img class="recipe__img--preview" src="http://placehold.it/140x140" alt="" />
           <div class="recipe__description recipe__description--preview">
             <header>Спаггети Карбонара</header>
             <p class="recipe__text recipe__text--preview">Самая, пожалуй, знаменитая итальянская подливка к пасте</p>
             <span class="recipe__time recipe__time--preview">15 минут</span>
             <span class="recipe__ingredient recipe__ingredient--preview">7 ингридиентов</span>
             <p class="recipe__recomendation recipe__recomendation--preview">Рекомендуют: <span>155</span> человек</p>
-            <a href="recipe.html" class="btn recipe__btn recipe__btn--preview">Смотреть</a>
+            <a class="btn recipe__btn recipe__btn--preview" href="recipe.html">Смотреть</a>
           </div>
         </article>
       </div>
