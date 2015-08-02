@@ -18,6 +18,7 @@
     "tests"
   ],
   "devDependencies": {
-    "normalize.css": "~3.0.3"
+    "normalize.css": "~3.0.3",
+    "font-awesome": "~4.4.0"
   }
 }
