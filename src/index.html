@@ -31,50 +31,25 @@
     </section>
     <section class="content__dishes">
       <h2>Популярные рецепты</h2>
-      <article class="recipe">
-        <img class="recipe__img" src="http://placehold.it/140x180" alt="">
-        <div class="recipe__description">
-          <h3>Спаггети Карбонара</h3>
-          <p class="recipe__text">Самая, пожалуй, знаменитая итальянская подливка к пасте</p>
-          <span class="recipe__time">15 минут</span>
-          <span class="recipe__ingredient">7 ингридиентов</span>
-          <p class="recipe__recomendation">Рекомендуют: <span>155</span> человек</p>
-          <a class="btn recipe__btn" href="recipe.html">Смотреть</a>
-        </div>
-      </article>
-      <article class="recipe">
-        <img class="recipe__img" src="http://placehold.it/140x180" alt="">
-        <div class="recipe__description">
-          <h3>Спаггети Карбонара</h3>
-          <p class="recipe__text">Самая, пожалуй, знаменитая итальянская подливка к пасте</p>
-          <span class="recipe__time">15 минут</span>
-          <span class="recipe__ingredient">7 ингридиентов</span>
-          <p class="recipe__recomendation">Рекомендуют: <span>155</span> человек</p>
-          <a class="btn recipe__btn" href="recipe.html">Смотреть</a>
-        </div>
-      </article>
-      <article class="recipe">
-        <img class="recipe__img" src="http://placehold.it/140x180" alt="">
-        <div class="recipe__description">
-          <h3>Спаггети Карбонара</h3>
-          <p class="recipe__text">Самая, пожалуй, знаменитая итальянская подливка к пасте</p>
-          <span class="recipe__time">15 минут</span>
-          <span class="recipe__ingredient">7 ингридиентов</span>
-          <p class="recipe__recomendation">Рекомендуют: <span>155</span> человек</p>
-          <a class="btn recipe__btn" href="recipe.html">Смотреть</a>
-        </div>
-      </article>
-      <article class="recipe">
-        <img class="recipe__img" src="http://placehold.it/140x180" alt="">
-        <div class="recipe__description">
-          <h3>Спаггети Карбонара</h3>
-          <p class="recipe__text">Самая, пожалуй, знаменитая итальянская подливка к пасте</p>
-          <span class="recipe__time">15 минут</span>
-          <span class="recipe__ingredient">7 ингридиентов</span>
-          <p class="recipe__recomendation">Рекомендуют: <span>155</span> человек</p>
-          <a class="btn recipe__btn" href="recipe.html">Смотреть</a>
-        </div>
-      </article>
+      <script id="index-recipe" type="text/x-hanldebars-template">
+      {{#each recipe}}
+        <article class="recipe">
+          <img class="recipe__img" src="http://placehold.it/140x180" alt="" />
+          <div class="recipe__description">
+            <h3>{{title}}</h3>
+            <p class="recipe__text">{{text}}</p>
+            <span class="recipe__time">{{time}} минут</span>
+            <span class="recipe__ingredient">{{ingridient}} ингридиентов</span>
+            {{#if recomendation}}
+            <p class="recipe__recomendation">Рекомендуют: <span>{{recomendation}}</span> человек</p>
+            {{else}}
+            <p class="recipe__recomendation">Рекомендуют: 0 человек</p>
+            {{/if}}
+            <a class="btn recipe__btn" href="recipe.html">Смотреть</a>
+          </div>
+        </article>
+        {{/each}}
+      </script>
     </section>
     <section class="content__categories">
       <h2>Популярные категории</h2>
@@ -98,142 +73,6 @@
         </div>
         <div class="review-slider__slides">
           <div class="review-slider__slide-wrapper">
-            <div class="review-slider__slide">
-              <img class="rewiew-slider__photo" src="http://placehold.it/100x100" alt="">
-              <div class="review-slider__comment">
-                <header>Мария1</header>
-                <div class="review-slider__rate">
-                  <div class="review-slider__rate-wrapper">
-                    <input class="review-slider__star" id="star-5" type="radio" name="rating" value="5">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-5" title="5 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-4" type="radio" name="rating" value="4">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-4" title="4 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-3" type="radio" name="rating" value="3">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-3" title="3 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-2" type="radio" name="rating" value="2">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-2" title="2 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-1" type="radio" name="rating" value="1">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-1" title="1 out of 5 stars"></label>
-                  </div>
-                </div>
-                <p>Делаю все по рецептам. Отлично получается, очень вкусно!</p>
-                <span class="review-slider__date">1 марта 2015 года</span>
-              </div>
-            </div>
-            <div class="review-slider__slide">
-              <img class="rewiew-slider__photo" src="http://placehold.it/100x100" alt="">
-              <div class="review-slider__comment">
-                <header>Мария2</header>
-                <div class="review-slider__rate">
-                  <div class="review-slider__rate-wrapper">
-                    <input class="review-slider__star" id="star-6" type="radio" name="rating1" value="5">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-6" title="5 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-7" type="radio" name="rating1" value="4">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-7" title="4 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-8" type="radio" name="rating1" value="3">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-8" title="3 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-9" type="radio" name="rating1" value="2">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-9" title="2 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-10" type="radio" name="rating1" value="1">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-10" title="1 out of 5 stars"></label>
-                  </div>
-                </div>
-                <p>Делаю все по рецептам. Отлично получается, очень вкусно!</p>
-                <span class="review-slider__date">1 марта 2015 года</span>
-              </div>
-            </div>
-          </div>
-          <div class="review-slider__slide-wrapper">
-            <div class="review-slider__slide">
-              <img class="rewiew-slider__photo" src="http://placehold.it/100x100" alt="">
-              <div class="review-slider__comment">
-                <header>Мария3</header>
-                <div class="review-slider__rate">
-                  <div class="review-slider__rate-wrapper">
-                    <input class="review-slider__star" id="star-11" type="radio" name="rating3" value="5">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-11" title="5 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-12" type="radio" name="rating3" value="4">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-12" title="4 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-13" type="radio" name="rating3" value="3">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-13" title="3 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-14" type="radio" name="rating3" value="2">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-14" title="2 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-15" type="radio" name="rating3" value="1">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-15" title="1 out of 5 stars"></label>
-                  </div>
-                </div>
-                <p>Делаю все по рецептам. Отлично получается, очень вкусно!</p>
-                <span class="review-slider__date">1 марта 2015 года</span>
-              </div>
-            </div>
-            <div class="review-slider__slide">
-              <img class="rewiew-slider__photo" src="http://placehold.it/100x100" alt="">
-              <div class="review-slider__comment">
-                <header>Мария4</header>
-                <div class="review-slider__rate">
-                  <div class="review-slider__rate-wrapper">
-                    <input class="review-slider__star" id="star-16" type="radio" name="rating4" value="5">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-16" title="5 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-17" type="radio" name="rating4" value="4">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-17" title="4 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-18" type="radio" name="rating4" value="3">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-18" title="3 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-19" type="radio" name="rating4" value="2">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-19" title="2 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-20" type="radio" name="rating4" value="1">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-20" title="1 out of 5 stars"></label>
-                  </div>
-                </div>
-                <p>Делаю все по рецептам. Отлично получается, очень вкусно!</p>
-                <span class="review-slider__date">1 марта 2015 года</span>
-              </div>
-            </div>
-          </div>
-          <div class="review-slider__slide-wrapper">
-            <div class="review-slider__slide">
-              <img class="rewiew-slider__photo" src="http://placehold.it/100x100" alt="">
-              <div class="review-slider__comment">
-                <header>Мария5</header>
-                <div class="review-slider__rate">
-                  <div class="review-slider__rate-wrapper">
-                    <input class="review-slider__star" id="star-21" type="radio" name="rating5" value="5">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-21" title="5 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-22" type="radio" name="rating5" value="4">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-22" title="4 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-23" type="radio" name="rating5" value="3">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-23" title="3 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-24" type="radio" name="rating5" value="2">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-24" title="2 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-25" type="radio" name="rating5" value="1">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-25" title="1 out of 5 stars"></label>
-                  </div>
-                </div>
-                <p>Делаю все по рецептам. Отлично получается, очень вкусно!</p>
-                <span class="review-slider__date">1 марта 2015 года</span>
-              </div>
-            </div>
-            <div class="review-slider__slide">
-              <img class="rewiew-slider__photo" src="http://placehold.it/100x100" alt="">
-              <div class="review-slider__comment">
-                <header>Мария6</header>
-                <div class="review-slider__rate">
-                  <div class="review-slider__rate-wrapper">
-                    <input class="review-slider__star" id="star-26" type="radio" name="rating6" value="5">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-26" title="5 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-27" type="radio" name="rating6" value="4">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-27" title="4 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-28" type="radio" name="rating6" value="3">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-28" title="3 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-29" type="radio" name="rating6" value="2">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-29" title="2 out of 5 stars"></label>
-                    <input class="review-slider__star" id="star-30" type="radio" name="rating6" value="1">
-                    <label class="review-slider__ico fa fa-star-o fa-lg" for="star-30" title="1 out of 5 stars"></label>
-                  </div>
-                </div>
-                <p>Делаю все по рецептам. Отлично получается, очень вкусно!</p>
-                <span class="review-slider__date">1 марта 2015 года</span>
-              </div>
-            </div>
           </div>
         </div>
     </section>
@@ -241,5 +80,9 @@
   <footer class="footer">
     <a href="mailto:info@cookerhelp.ru">info@cookerhelp.ru</a>
   </footer>
+  <script src="./js/handlebars.js"></script>
+  <script src="./js/templates/index-review.js" id="index-review" type="text/x-hanldebars-template"></script>
+  <script src="./js/index.js"></script>
+  
 </body>
 </html>

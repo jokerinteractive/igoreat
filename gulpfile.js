@@ -7,19 +7,25 @@ var gulp = require('gulp'),
 
 gulp.task('html', function() {
   gulp.src("./src/*.html")
-    .pipe(gulp.dest("./dest/"))
+    .pipe(gulp.dest("./dest/"));
 });
 
 gulp.task('image', function() {
   gulp.src("./src/img/*")
-    .pipe(gulp.dest("./dest/img"))
+    .pipe(gulp.dest("./dest/img"));
 });
 
 gulp.task('js', function() {
   gulp.src('./src/js/*.js')
-    .pipe(uglify())
+    //.pipe(uglify())
     .pipe(gulp.dest('./dest/js'))
     .pipe(reload({stream: true}));
+});
+
+gulp.task('handlebars', function() {
+  gulp.src('./bower_components/handlebars/handlebars.js')
+    //.pipe(uglify())
+    .pipe(gulp.dest('./dest/js'));
 });
 
 gulp.task('less', function() {
