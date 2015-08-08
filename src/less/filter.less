@@ -182,48 +182,45 @@
     box-sizing: border-box;
     width: 100%;
     margin-bottom: 30px;
+    .recipe__img {
+      width: 140px;
+      height: 140px;
+      flex-shrink: 0;
+      margin-right: 15px;
+      margin-bottom: 10px;
+    }
     .recipe__description {
-
+      width: 65%;
+      flex-grow: 1;
+      header {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+        font-weight: bold;
+      }
     }
-  }
-  &__img--preview {
-    width: 140px;
-    height: 140px;
-    flex-shrink: 0;
-    margin-right: 15px;
-    margin-bottom: 10px;
-  }
-  &__description--preview {
-    width: 65%;
-    flex-grow: 1;
-    header {
-      font-size: 1.6rem;
-      margin-bottom: 15px;
-      font-weight: bold;
+    .recipe__text{
+      font-size: 1.4rem;
+      margin-bottom: 20px;
     }
-  }
-  &__text--preview {
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-  }
-  &__time--preview,
-  &__ingredient--preview,
-  &__recomendation--preview,
-  &__btn--preview {
-    font-size: 1.2rem;
-  }
-  &__time--preview,
-  &__ingredient--preview {
-    margin-right: 10px;
-    background-image: url("http://placehold.it/15x15");
-    background-repeat: no-repeat;
-    background-position: 5%, 0%;
-  }
-  &__recomendation--preview {
-    display: inline-flex;
-    margin-right: 20px;
+    .recipe__time,
+    .recipe__ingredient,
+    .recipe__recomendation {
+      font-size: 1.2rem;
+    }
+    .recipe__time,
+    .recipe__ingredient {
+      margin-right: 10px;
+      background-image: url("http://placehold.it/15x15");
+      background-repeat: no-repeat;
+      background-position: 5%, 0%;
+    }
+    .recipe__recomendation {
+      display: inline-flex;
+      margin-right: 20px;
+    }
   }
   &__btn--preview {
     padding: 5px 10px;
+    font-size: 1.2rem;
   }
 }
