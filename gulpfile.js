@@ -16,7 +16,7 @@ gulp.task('image', function() {
 });
 
 gulp.task('js', function() {
-  gulp.src('./src/js/*.js')
+  gulp.src('./src/js/**/*')
     //.pipe(uglify())
     .pipe(gulp.dest('./dest/js'))
     .pipe(reload({stream: true}));
