@@ -68,12 +68,12 @@ var indexPage = {
   }
 };
 
-var myRecipe = document.getElementById('index-recipe').innerHTML;//делаем шаблон и сохраняем его в формате строки
-var handlerRecipe = Handlebars.compile(myRecipe);//компилируем строку (см выше) в функцию js
-var addRecipe = handlerRecipe(indexPage); // и мы в функцию(см выше) передаем объект
-var recipe = document.querySelector('.content__dishes'); // переменная для добавления в верстку
-recipe.innerHTML = addRecipe;//выводим штмл в документ
-
+//var myRecipe = document.getElementById('index-recipe').innerHTML;//делаем шаблон и сохраняем его в формате строки
+//var handlerRecipe = Handlebars.compile(myRecipe);//компилируем строку (см выше) в функцию js
+//var addRecipe = handlerRecipe(indexPage); // и мы в функцию(см выше) передаем объект
+//var recipe = document.querySelector('.content__dishes'); // переменная для добавления в верстку
+//recipe.innerHTML = addRecipe;//выводим штмл в документ
+ 
 
 function renderTemplate(template_name, data, el) {
   var xhr = new XMLHttpRequest();
@@ -92,3 +92,5 @@ function renderTemplate(template_name, data, el) {
 }
 
 renderTemplate('index-review', indexPage.review, '.review-slider__slide-wrapper');
+renderTemplate('index-recipe', indexPage, '.content__dishes');
+
