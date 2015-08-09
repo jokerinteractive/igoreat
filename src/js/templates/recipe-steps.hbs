@@ -1,0 +1,10 @@
+<h3>Как готовить</h3>
+<ul class="steps__list">
+  {{#each steps}}
+  <li class="steps__item">
+    <p class="steps__title">{{title}}</p>
+    <a class="recipe__more" href="./step.html">подробнее</a>
+    <div class="steps__description">{{description}}</div>
+  </li>
+  {{/each}}
+</ul>
