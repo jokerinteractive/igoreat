@@ -73,7 +73,6 @@ var indexPage = {
 //var addRecipe = handlerRecipe(indexPage); // и мы в функцию(см выше) передаем объект
 //var recipe = document.querySelector('.content__dishes'); // переменная для добавления в верстку
 //recipe.innerHTML = addRecipe;//выводим штмл в документ
- 
 
 function renderTemplate(template_name, data, el) {
   var xhr = new XMLHttpRequest();

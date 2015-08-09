@@ -1,0 +1,21 @@
+<ul class="ingredient__list">
+  <li class="ingredient__item">
+    <p>Список ингредиентов</p>
+    <p>7 ингредиентов</p>
+  </li>
+  {{#each ingredients}}
+  <li class="ingredient__item ingredient__item--spaghetti">
+    <p>{{title}}</p>
+    {{#if how}}
+    <p>Нужно {{how}}</p>
+    {{else}}
+    <p>По вкусу</p>
+    {{/if}}
+    <div class="ingredient__buy">
+      <a href="#" class="btn btn--ingredient ingredient__btn ingredient__btn--yes">Есть</a>
+      <a href="#" class="btn btn--ingredient ingredient__btn ingredient__btn--no">Надо купить</a>
+    </div>
+  </li>
+  {{/each}}
+</ul>
+<a class="ingredient__sms" href="#">Отправить sms с просьбой купить</a>
