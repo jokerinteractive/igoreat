@@ -1,0 +1,17 @@
+{{#each recipe_review}}
+  <article class="recipe recipe--preview">
+    <img class="recipe__img" src="http://placehold.it/140x180" alt="" />
+    <div class="recipe__description">
+      <h3>{{title}}</h3>
+      <p class="recipe__text">{{text}}</p>
+      <span class="recipe__time">{{time}} минут</span>
+      <span class="recipe__ingredient">{{ingridient}} ингридиентов</span>
+      {{#if recomendation}}
+      <p class="recipe__recomendation">Рекомендуют: <span>{{recomendation}}</span> человек</p>
+      {{else}}
+      <p class="recipe__recomendation">Рекомендуют: 0 человек</p>
+      {{/if}}
+      <a class="btn recipe__btn recipe__btn--preview" href="recipe.html">Смотреть</a>
+    </div>
+  </article>
+{{/each}}
