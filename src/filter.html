@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>IgorEat</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="./css/style.css" rel="stylesheet">
 </head>
-
 <body>
   <article class="select">
     <section class="filter">
@@ -76,28 +74,8 @@
           <p>Найденo: <span class="result__counter">0</span></p>
           <a class="btn result__btn" href="#">Сбросить</a>
         </div>
-        <article class="recipe recipe--preview">
-          <img class="recipe__img" src="http://placehold.it/140x140" alt="" />
-          <div class="recipe__description">
-            <header>Спаггети Карбонара</header>
-            <p class="recipe__text">Самая, пожалуй, знаменитая итальянская подливка к пасте</p>
-            <span class="recipe__time">15 минут</span>
-            <span class="recipe__ingredient">7 ингридиентов</span>
-            <p class="recipe__recomendation">Рекомендуют: <span>155</span> человек</p>
-            <a class="btn recipe__btn recipe__btn--preview" href="recipe.html">Смотреть</a>
-          </div>
-        </article>
-        <article class="recipe recipe--preview">
-          <img class="recipe__img--preview" src="http://placehold.it/140x140" alt="" />
-          <div class="recipe__description recipe__description--preview">
-            <header>Спаггети Карбонара</header>
-            <p class="recipe__text recipe__text--preview">Самая, пожалуй, знаменитая итальянская подливка к пасте</p>
-            <span class="recipe__time recipe__time--preview">15 минут</span>
-            <span class="recipe__ingredient recipe__ingredient--preview">7 ингридиентов</span>
-            <p class="recipe__recomendation recipe__recomendation--preview">Рекомендуют: <span>155</span> человек</p>
-            <a class="btn recipe__btn recipe__btn--preview" href="recipe.html">Смотреть</a>
-          </div>
-        </article>
+        <div class="result__recipe">
+        </div>
       </div>
     </section>
   </article>
@@ -105,6 +83,8 @@
     <a href="#">info@cookhelp.ru</a>
   </footer>
   <script type="text/javascript" src="./js/filter.js"></script>
+  <script src="./js/handlebars.js"></script>
+  <script src="./js/index.js"></script>
 </body>
-
 </html>
+
